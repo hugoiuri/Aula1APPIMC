@@ -1,18 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/lblPesoId"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Digite o seu peso (KG)" />
 
-</android.support.constraint.ConstraintLayout>
+    <EditText
+        android:id="@+id/txtPesoId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/lblAlturaId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Digite a sua altura (cm)" />
+
+    <EditText
+        android:id="@+id/txtAlturaId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnCalcularId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="CalcularIMC"
+        android:text="Calcular IMC" />
+
+    <TextView
+        android:id="@+id/lblIMCId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="IMC" />
+
+</android.widget.LinearLayout>
