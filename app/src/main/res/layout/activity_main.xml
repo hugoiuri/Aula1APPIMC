@@ -11,39 +11,70 @@
         android:id="@+id/lblPesoId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Digite o seu peso (KG)" />
+        android:fontFamily="casual"
+        android:numeric="decimal"
+        android:text="Digite o seu peso (KG)"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/txtPesoId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="number" />
+        android:fontFamily="casual"
+        android:inputType="number"
+        android:textAlignment="center" />
 
     <TextView
         android:id="@+id/lblAlturaId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Digite a sua altura (cm)" />
+        android:fontFamily="casual"
+        android:text="Digite a sua altura (cm)"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/txtAlturaId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="number" />
+        android:fontFamily="casual"
+        android:inputType="number"
+        android:numeric="decimal"
+        android:textAlignment="center"
+        android:textAllCaps="false" />
 
     <Button
         android:id="@+id/btnCalcularId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="casual"
         android:onClick="CalcularIMC"
-        android:text="Calcular IMC" />
+        android:text="Calcular IMC"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/lblIMCId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="IMC" />
+        android:fontFamily="casual"
+        android:numeric="integer"
+        android:text="IMC"
+        android:textAlignment="center"
+        android:textColor="#0000FF"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/lblIMCClassificacaoId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:textColor="#000080"
+        android:textSize="18sp" />
 
 </android.widget.LinearLayout>
