@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         double altura = Double.parseDouble(txtAltura.getText().toString())/100;
         double imc =  calcularIMC(peso, altura);
 
-        String result = String.valueOf(imc);
+        String result = String.format("%.2f", imc);
         String classificacao = getClassificacao(imc);
 
         lblIMC.setText(result);
@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private double calcularIMC(double peso, double altura){
-        double imc =  Math.round(peso/(altura*altura));
+        double imc =  peso/(altura*altura);
 
         return imc;
     }
